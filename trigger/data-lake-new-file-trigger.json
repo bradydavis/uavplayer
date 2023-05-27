@@ -1,0 +1,24 @@
+{
+	"name": "data-lake-new-file-trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "excel-pipeline",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/data-lake-container/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/4a6edce4-1d4e-4869-b768-e31db5e981da/resourceGroups/etlricovidallahan/providers/Microsoft.Storage/storageAccounts/etlricovidallahan",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

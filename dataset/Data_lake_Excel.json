@@ -1,0 +1,63 @@
+{
+	"name": "Data_lake_Excel",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "xls_files",
+				"fileSystem": "data-lake-container"
+			},
+			"sheetIndex": 0,
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Invoice Number",
+				"type": "String"
+			},
+			{
+				"name": "Customer",
+				"type": "String"
+			},
+			{
+				"name": "Invoice Date",
+				"type": "String"
+			},
+			{
+				"name": "Billable Project",
+				"type": "String"
+			},
+			{
+				"name": "Project Manager",
+				"type": "String"
+			},
+			{
+				"name": "Payment Status",
+				"type": "String"
+			},
+			{
+				"name": "Payment Date",
+				"type": "String"
+			},
+			{
+				"name": "Payment Amount",
+				"type": "String"
+			},
+			{
+				"name": "Payment Type",
+				"type": "String"
+			},
+			{
+				"name": "Transaction Number",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

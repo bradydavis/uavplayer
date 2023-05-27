@@ -1,0 +1,9 @@
+{
+	"name": "cteh-data",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6a2237a6-4251-4ce8-a943-e4395b3bdaf1",
+		"tenantId": "5c370551-008d-47d9-a7a2-fd08fe8a5777"
+	}
+}
